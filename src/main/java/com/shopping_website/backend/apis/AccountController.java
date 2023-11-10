@@ -6,11 +6,12 @@ import com.shopping_website.backend.services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
-@RequestMapping("accounts")
 @CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping(path = "accounts")
 public class AccountController {
 
     @Autowired
