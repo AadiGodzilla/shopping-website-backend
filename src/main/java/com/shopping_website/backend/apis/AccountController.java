@@ -6,7 +6,6 @@ import com.shopping_website.backend.services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -38,7 +37,7 @@ public class AccountController {
     }
 
     @PostMapping("/{email}/deletefromcart")
-    public String deletetocart(@PathVariable String email, @RequestBody List<Integer>index) {
+    public String deletetocart(@PathVariable String email, @RequestBody List<Integer> index) {
         return accountService.deleteFromCart(email, index);
     }
 

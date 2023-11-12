@@ -1,7 +1,6 @@
 package com.shopping_website.backend.apis;
 
 import com.shopping_website.backend.models.Product;
-import com.shopping_website.backend.repos.ProductRepository;
 import com.shopping_website.backend.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
