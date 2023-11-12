@@ -4,8 +4,6 @@ import com.shopping_website.backend.models.Account;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import java.util.List;
-
 public interface AccountRepository extends MongoRepository<Account, Integer> {
     @Query("{'email' : ?0}")
     Account findAccountByEmail(String email);
